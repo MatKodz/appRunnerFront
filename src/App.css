@@ -1,0 +1,91 @@
+#root {
+
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.run-duration {
+  font-family: monospace;
+  background-color: var(--blue-100);
+  font-weight: 600;
+  font-size: .875rem;
+}
+
+.run-id {
+  width: 50px;
+}
+
+.run-date {
+  font-size: .85rem;
+}
+
+.run-date-reorder {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+img {
+  vertical-align: middle;
+  width: 24px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#register {
+  gap: 16px;
+  align-items: flex-start;
+}
+
+#register label {
+  min-width: 200px;
+  display: block;
+}
+
+#register input {
+  padding: 16px;
+  border-radius: 10px;
+  margin: 16px;
+  box-shadow: 1px 1px 10px #ccc;
+  font-size: 2rem;
+  border: 0;
+}
+
+#register div {
+  flex: 1 1;
+}
+
+nav a {
+  color: var(--blue-800);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+}
+
+.single-run-enter {
+  opacity: 0;
+  position: relative;
+  top: -15px;
+}
+.single-run-enter-active {
+  opacity: 1;
+  top :0 ;
+  position: relative;
+  transition: all 200ms ease-out;
+}
+.single-run-exit {
+  opacity: 1;
+  top: 0;
+  position: relative;
+}
+.single-run-exit-active {
+  opacity: 0;
+  position: relative;
+  top: -15px;
+  transition: all 200ms ease-out;
+}
